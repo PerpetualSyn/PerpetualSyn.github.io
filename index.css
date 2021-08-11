@@ -93,14 +93,21 @@ html {
 /* home */
 
 .indexBody {
-  height: 100vh;
-  background-image: url(img/himan.png);
+  max-height: 90vh;
+  /* background-image: url(img/himan.png); */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain;
   opacity: 0.8;
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
   mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  overflow: hidden;
+}
+
+.indexBody > img {
+  width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .bg-text {
