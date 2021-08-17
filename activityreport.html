@@ -2,20 +2,19 @@
 <html>
 	<head>
     <meta charset="UTF-8">
-    <title>New Project</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Perpetual Synergy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	  
+  <link rel="stylesheet" href="activityfeed.css" type="text/css">
   </head>
   <body>
     <main>
       <h1 class="visually-hidden">Headers examples</h1>
-    
+
       <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">Perpetual</span><span class="fs-4">Synergy</span>
+            <span class="fs-4">Perpetual </span><span class="fs-4">Synergy</span>
           </a>
     
           <ul class="nav nav-pills">
@@ -23,33 +22,113 @@
               <div class="dropdown">
                 <button class="btn btn-secondary btn-sm dropdown-toggle nav-link active bg-dark" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="hamburger">≡</span> <span> &nbsp; Menu</span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
-                <li><h6 class="dropdown-header">Elliott Williams</h6></li>
-                <li><a class="dropdown-item" href="activityfeed.html">Activity Feed</a></li>
-                <li><a class="dropdown-item" href="activityreport.html">Activity Report</a></li>
-                <li><a class="dropdown-item" href="shopschedule.html">Shop Schedule</a></li>
-                <li><a class="dropdown-item" href="bbg.html">Browse by Gallery</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Log Out</a></li>
-              </ul>
-            </div></li>
-            
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+                  <li><h6 class="dropdown-header">Don A.</h6></li>
+                  <li><a class="dropdown-item" href="activityfeed.html">Activity Feed</a></li>
+                  <li><a class="dropdown-item" href="activityreport.html">Activity Report</a></li>
+                  <li><a class="dropdown-item" href="shopschedule.html">Shop Schedule</a></li>
+                  <li><a class="dropdown-item" href="bbg.html">Browse by Gallery</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
-
         </header>
 
-        <div>??</div>
+        <body>
+          <div class="main">
+            <div class="container">
+              <div class="wrapper">
+                <div class="sidebar">
+                  <button class="filterBtn" onclick="location.reload()">All</button>
+                  <button class="filterBtn" onclick="filterCards()">Client Updates</button>
+                  <button class="filterBtn" onclick="filterCards()">Tattoo Updates</button>
+                  <button class="filterBtn" onclick="filterCardsArtist()">Artist Updates</button>
+                </div>
+                
+                <div class="row g-2 justify-content-center afcardRow">
+                  <div class="col-sm-8 col-md-4 col-lg-3 card afcard artistCard">
+                    <div class="afcardImage text-center bg-secondary">Artist Image</div>
+                    <div class="afcardUpdate text-center bg-success">Artist Profile Updated</div>
+                      <div class="afcardLower text-center">Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>New Artist Added</strong> <br>
+                        <button class="recordBtn" onclick="filterCards()" >Open Record</button>
+                      </div>
+                  </div>
 
-    </div>
-    
-    </main>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-  </body>
+                        <div class="col-sm-8 col-md-4 col-lg-3 card afcard clientCard">
+                          <div class="afcardImage text-center bg-secondary">Client Image</div>
+                          <div class="afcardUpdateClient text-center bg-success">Client Profile Updated</div>
+                          <div class="afcardLower text-center">Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>Client Updates</strong> <br>
+                            <button class="recordBtn" onclick="filterCards()">Open Record</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-8 col-md-4 col-lg-3 card afcard artistCard">
+                          <div class="afcardImage text-center bg-secondary">Artist Image</div>
+                          <div class="afcardUpdate text-center bg-success">Artist Profile Updated</div>
+                          <div class="afcardLower text-center">Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>New Artist Added</strong> <br>
+                            <button class="recordBtn">Open Record</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-8 col-md-4 col-lg-3 card afcard clientCard">
+                            <div class="afcardImage text-center bg-secondary">Client Image</div>
+                            <div class="afcardUpdateClient text-center bg-success">Client Profile Updated</div>
+                            <div class="afcardLower text-center">Client Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>Client Updates</strong> <br>
+                              <button class="recordBtn">Open Record</button>
+                            </div>
+                          </div>
+          
+                          <div class="col-sm-8 col-md-4 col-lg-3 card afcard artistCard">
+                            <div class="afcardImage text-center bg-secondary">Artist Image</div>
+                            <div class="afcardUpdate text-center bg-success">Artist Profile Updated</div>
+                            <div class="afcardLower text-center">Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>New Artist Added</strong> <br>
+                            <button class="recordBtn">Open Record</button></div>
+                          </div>
+          
+                          <div class="col-sm-8 col-md-4 col-lg-3 card afcard artistCard">
+                            <div class="afcardImage text-center bg-secondary">Artist Image</div>
+                            <div class="afcardUpdate text-center bg-success">Artist Profile Updated</div>
+                            <div class="afcardLower text-center">Artist Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>New Artist Added</strong> <br>
+                              <button class="recordBtn">Open Record</button>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-8 col-md-4 col-lg-3 card afcard clientCard">
+                            <div class="afcardImage text-center bg-secondary">Client Image</div>
+                            <div class="afcardUpdateClient text-center bg-success">Client Profile Updated</div>
+                            <div class="afcardLower text-center">Client Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>Client Updates</strong> <br>
+                              <button class="recordBtn">Open Record</button>
+                            </div>
+                          </div>
+          
+                          <div class="col-sm-8 col-md-4 col-lg-3 card afcard artistCard">
+                            <div class="afcardImage text-center bg-secondary">Artist Image</div>
+                            <div class="afcardUpdate text-center bg-success">Artist Profile Updated</div>
+                            <div class="afcardLower text-center">Artist Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>New Artist Added</strong> <br>               
+                              <button class="recordBtn">Open Record</button>
+                            </div>
+                          </div>
+          
+                          <div class="col-sm-8 col-md-4 col-lg-3 card afcard clientCard">
+                            <div class="afcardImage text-center bg-secondary">Client Image</div>
+                            <div class="afcardUpdateClient text-center bg-success">Client Profile Updated</div>
+                            <div class="afcardLower text-center">Client Updates <br> 8/8/21 <br> 7:30PM EST <br> <strong>Client Updates</strong> <br>                
+                              <button class="recordBtn">Open Record</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+              </div>
+          
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            <script src="index.js"></script>
+          </body>
 </html>
