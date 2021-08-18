@@ -3,6 +3,13 @@
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .perpSpan {
+    font-weight: 700;
   }
     
   html {
@@ -224,7 +231,7 @@ body {
       border-radius: 5px;
   }
 
-  .container {
+  .containerLower {
     min-width: 100%
   }
 
