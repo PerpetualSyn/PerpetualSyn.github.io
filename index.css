@@ -263,3 +263,8 @@ text-align: center;
   margin-top: 20px;
   width: 200px; 
 }
+
+.reportLowerWrapper {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
